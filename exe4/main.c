@@ -47,7 +47,7 @@ int main() {
   gpio_set_irq_enabled_with_callback(BTN_PIN_R, GPIO_IRQ_EDGE_FALL, true,
                                      &btn_callback);
 
-  // callback led g (nao usar _with_callback)
+  // callback led g (nao usar _with_callback.)
   gpio_set_irq_enabled(BTN_PIN_G, GPIO_IRQ_EDGE_RISE, true);
 
   while (true) {
